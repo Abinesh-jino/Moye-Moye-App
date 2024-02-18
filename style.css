@@ -1127,7 +1127,20 @@ hr{
   }
 
   .sub-title{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
+  }
+  .Pop-msg{
+    height: 360px;
+  }
+  .pop-btn a:nth-child(1) {
+    padding: 10px 12px;
+  }
+  .Pop-msg p{
+    font-size: 10px;
+  }
+
+  .footer{
+    height: 100%;
   }
 }

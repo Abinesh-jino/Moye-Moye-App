@@ -944,21 +944,29 @@ hr{
 }
 @media screen and (max-width:900px){
   .main-about{
-  flex-direction: column;
+    flex-direction: column;
+    width: 80%;
   }
   .sub-about-right{
-    width: 100%;
+    width: 85%;
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
   .about-txt{
-    width: 100%;
+    width: 90%;
     text-align: center;
+    font-size: 16px;
   }
   .about-desc{
-    width: 95%;
+    width: 90%;
+    font-size: 14px;
   }
   .about-right-below div{
-    width: 100%;
+    align-items: center;
+    width: 85%;
+    gap: 10%;
     text-align: center;
   }
 }

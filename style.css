@@ -1084,6 +1084,11 @@ hr{
     gap: 10px;
     flex-wrap: wrap;
   }
+
+  .Nav-bar{
+    width: 90%;
+    gap: 30px;
+  }
   .footer-right-btns{
     display: flex;
     gap: 20px;

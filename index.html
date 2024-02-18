@@ -27,9 +27,9 @@
       <div class="nav-menus">
 
         <ul class="nav-ul">
-          <li class="nav-list"> <a class="active nav-links" href="#Section-1"> Home</a> </li>
-          <li class="nav-list"> <a class="nav-links" href="#Section-2"> Features</a> </li>
-          <li class="nav-list"> <a class="nav-links" href="#Section-3"> How it Works </a> </li>
+          <li class="nav-list"> <a onclick="" class="nav-links" href="#Home"> Home</a> </li>
+          <li class="nav-list"> <a class="nav-links" href="#Features"> Features</a> </li>
+          <li class="nav-list"> <a class="nav-links" href="#How-it-Works"> How it Works </a> </li>
           <li class="nav-list"> <a class="nav-links" href="#About"> About Us </a> </li>
           <li class="nav-list"> <a style="transition: 1.2s all ease-in-out;" class="nav-links" href="#FAQ"> FAQs </a> </li>
           <li class="nav-list"> <a class="nav-links" href="#Contact"> Contact Us </a> </li>
@@ -41,7 +41,7 @@
           <li class="nav-list"> <a class="nav-links" href="#Section-2"> Features</a> </li>
           <li class="nav-list"> <a class="nav-links" href="#Section-3"> How it Works </a> </li>
           <li class="nav-list"> <a class="nav-links" href="#About"> About Us </a> </li>
-          <li class="nav-list"> <a class="nav-links" href=""> FAQs </a> </li>
+          <li class="nav-list"> <a class="nav-links" href="#FAQ"> FAQs </a> </li>
           <li class="nav-list"> <a class="nav-links" href="#Contact"> Contact Us </a> </li>
           <li class="nav-list"> <a class="nav-btn1" target="_blank" href="https://play.google.com/store/apps/details?id=com.moyemoye.chat"> Get Started </a></li>
       </div>
@@ -57,7 +57,7 @@
     </nav>
   </div>
 
-  <section id="Section-1" class="Hero-Sec">
+  <section id="Home" class="Hero-Sec">
 
     <div class="hero-main">
       <div class="hero-left">
@@ -79,7 +79,7 @@
 
   </section>
 
-  <section id="Section-2" class="sec-2">
+  <section id="Features" class="sec-2">
     <div class="top-text-2">
       <h4 class="main-title"> FEATURES </h4>
       <h2 class="sub-title">Discover what sets us apart.<br> Explore our unique features today !</h2>
@@ -125,7 +125,7 @@
 
   </section>
 
-  <section id="Section-3" class="sec-3">
+  <section id="How-it-Works" class="sec-3">
     <div class="top-text-2">
       <h4 class="main-title"> HOW IT WORKS </h4>
       <h2 class="sub-title">Get to know How to use or <br> How Moye Moye App Works</h2>
@@ -386,7 +386,18 @@
       const isOpen=dropDown.classList.contains('open')
       
       toggleBtnIcon.classList=isOpen? 'fa fa-xmark' : 'fa fa-bars'
+      
     }
+
+
+    const navLink =document.querySelectorAll('.nav-links')
+
+    navLink.forEach(navLink => {
+      navLink.addEventListener('click' ,()=> {
+        document.querySelector('.active')?.classList.remove('active');
+        navLink.classList.add('active');
+      });
+    });
 
   </script>
 </body>

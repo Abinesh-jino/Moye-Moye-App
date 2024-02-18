@@ -628,12 +628,17 @@ sec-3:focus,.nav-links:nth-child(2){
   align-items: center;
 }
 
+.nav-links:active ,.nav-links:hover{
+  color: red;
+}
+
 .Pop-msg{
   width: 65%;
   display: flex;
   flex-direction: column;
   padding-left: 05%;
-  padding-bottom: 04%;
+  padding-bottom: 02%;
+  padding-top: 1%;
   justify-content: center;
   margin-top: 80px;
   flex-shrink: 0;
@@ -1155,6 +1160,13 @@ hr{
   }
   .Pop-msg{
     height: 360px;
+    width: 70%;
+  }
+
+  .accordion{
+
+    font-weight: 700;
+    font-size: 14px;
   }
   .pop-btn a:nth-child(1) {
     padding: 10px 12px;
